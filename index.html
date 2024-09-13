@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name's Blog</title>
+    <!-- LINK Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="index.css">
@@ -32,54 +41,74 @@
         </nav>
     </header>
 
-    <!-- Header Section -->
-    <header class="header text-center py-5">
-        <div class="profile mb-4">
-            <img src="images/profile.jpg" alt="Your Profile Picture" class="img-fluid rounded-circle">
-        </div>
-        <h1>Jordan Micko Deloria</h1>
-        <p>Graphic Designer/Video Editor/Web Developer</p>
-    </header>
+    <body>
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="videos/munchlax.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
+    <!-- Header Section -->
+<header class="header text-center py-5">
+    <div class="profile mb-4">
+        <img src="images/profile.jpg" alt="Your Profile Picture" class="img-fluid rounded-circle">
+    </div>
+    <h1>Jordan Micko Deloria</h1>
+    <p>Graphic Designer/Video Editor/Web Developer</p>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons mt-3">
+        <a href="https://www.facebook.com" target="_blank" class="text-dark mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="text-dark mx-2"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:your-email@example.com" class="text-dark mx-2"><i class="bi bi-envelope"></i></a>
+    </div>
+</header>
     <!-- About Section -->
     <section class="container my-5" id="about">
-        <h2 class="text-center">About Me</h2>
+        <h2 class="text-center">ABOUT ME</h2>
         <p style="text-align: center;">Hello! I’m Jordan Micko Deloria, a third-year college student currently freelancing as a Graphic Designer, Video Editor, and Web Developer. I have a passion for creating websites that are both visually appealing and user-friendly, with a strong focus on design aesthetics that captivate and engage users. As a graphic designer, I strive to produce work that is not only functional but also pleasing to the eye.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>PROJECTS</h2>
         <div class="row">
-          <div class="col-md-4">
-            <div class="project">
-              <img src="images/project1.jpg" alt="Project 1">
-              <h3>Low-Fidelity Blue Lock Website</h3>
-              <p>Personal Blog Website</p>
+            <div class="col-md-4">
+                <div class="project">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Low-Fidelity Blue Lock Website</h3>
+                    <p>Personal Blog Website</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <img src="images/project2.jpg" alt="Project 2">
-              <h3>Product Design</h3>
-              <p>New Balance Poster</p>
+            <div class="col-md-4">
+                <div class="project">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Product Design</h3>
+                    <p>New Balance Poster</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <img src="images/project3.jpg" alt="Project 3">
-              <h3>High-Fidelity UA-Website</h3>
-              <p>UA-Redesign Website</p>
+            <div class="col-md-4">
+                <div class="project">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>High-Fidelity UA-Website</h3>
+                    <p>UA-Redesign Website</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+        
+        <!-- Add Button Here -->
+        <div class="text-center mt-4">
+            <a href="https://drive.google.com/drive/folders/1aTHP-gfHXCK4BQRfe5UBYuEbgpnzqMde?usp=drive_link" class="btn btn-secondary btn-lg" target="_blank">
+                More of my projects
+            </a>
+        </div>
+    </div>
+</section>
+
 
     <!-- Tools Section -->
     <section class="container my-5" id="tools">
-        <h2 class="text-center">Tools</h2>
+        <h2 class="text-center">TOOLS</h2>
         <ul class="tools-list">
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1051px-Adobe_After_Effects_CC_icon.svg.png" width="500" alt="AE">
@@ -90,20 +119,20 @@
                 <p>Adobe Photoshop</p>
             </li>
             <li>
-                <img src="https://testrigor.com/wp-content/uploads/2023/04/nextjs-logo-square.png" alt="Next.js Logo">
-                <p>Next.js</p>
+                <img src="https://download.blender.org/branding/community/blender_community_badge_white.png" alt="Blender">
+                <p>Blender</p>
             </li>
             <li>
-                <img src="https://static.javatpoint.com/tutorial/xampp/images/xampp-tutorial.png" alt="Next.js Logo">
-                <p>XAMPP Control Panel</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png" alt="Figma">
+                <p>Figma</p>
             </li>
             <li>
-                <img src="https://storage.caktusgroup.com/media/blog-images/logo.png" alt="Next.js Logo">
-                <p>Pycharm</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio.png" alt="DavResolve">
+                <p>DaVinci Resolve Studio</p>
             </li>
             <li>
-                <img src="https://cdn.intuji.com/2022/06/Logo_Vercel-1.jpg" width="500" alt="Next.js Logo">
-                <p>Vercel</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png" alt="Vsc">
+                <p>VSCode</p>
             </li>
         </ul>
     </section>
@@ -111,7 +140,7 @@
     <!-- Contact Section -->
     <section id="connect" class="container-fluid py-5">
         <div class="container">
-            <h2 class="text-center mb-4">CONNECT WITH ME</h2>
+            <h2 class="text-center mb-4">CONTACT WITH ME</h2>
             <div class="row">
                 <div class="col-lg-6 mx-auto">
                     <div class="bg-white p-4 rounded shadow">
