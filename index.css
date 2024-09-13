@@ -1,8 +1,7 @@
-\body {
-    background-color: #f4f4f4;
-    color: #333;
+body {
+    background-color: #f4f4f4
     padding-top: 80px;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
@@ -11,22 +10,43 @@ html {
 }
 
 .navbar-top {
-    background-color: #ffffff;
+    background-color: #ffffff00;
 }
 
 .navbar-nav .nav-link {
-    color: #333 !important;
+    color: #ffffff !important;
     transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #666 !important;
+    color: #007bff !important; /* Bootstrap primary color */
+    background-color: #f8f9fa; /* Light background on hover */
 }
 
+
+
+/* Background video styling */
+.background-video {
+    position: fixed; /* Keeps the video in the background */
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -1; /* Keep it behind other content */
+}
+
+/* Ensure header content is above the video */
 .header {
-    text-align: center;
-    padding: 50px 0;
-    background: #f4f4f4;
+    position: relative;
+    z-index: 1; /* Set higher z-index */
+    color: rgb(0, 0, 0); 
+    padding: 100px 0; 
+    min-height: 100vh; 
+}
+
+.header h1, .header p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
 }
 
 .header .profile img {
@@ -36,6 +56,15 @@ html {
     border: 5px solid #e0e0e0;
     margin-bottom: 20px;
 }
+.social-icons a {
+    font-size: 24px; /* Adjust icon size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icons a:hover {
+    color: #666; /* Change color on hover */
+}
+
 
 .container {
     background: rgba(255, 255, 255, 0.9);
@@ -107,8 +136,9 @@ ul li {
 }
 
 .btn-primary {
-    background-color: #666;
-    border-color: #666;
+    background-color: #333;
+    border-color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -116,10 +146,14 @@ ul li {
     border-color: #555;
 }
 
+section {
+    position: relative; /* Ensure they stack correctly */
+    z-index: 1; /* Set higher z-index */
+}
+
+/* Example for footer to ensure it's above */
 .footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #e0e0e0;
+    z-index: 1;
 }
 
 .footer p {
@@ -144,8 +178,15 @@ ul li {
       }
       
       .project img:hover {
-        transform: scale(1.1); /* Zoom in effect on hover */
-      }
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    #projects .btn {
+        padding: 10px 30px;
+        font-size: 1.2em;
+        border-radius: 5px;
+    }
+    
       
       .project h3 {
         margin-top: 15px;
@@ -199,4 +240,12 @@ ul li {
 
 #tools {
     padding: 20px 0;
+}
+
+input:invalid, textarea:invalid {
+    border-color: #404454;
+}
+
+input:valid, textarea:valid {
+    border-color: #17191f;
 }
