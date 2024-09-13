@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f4f4
+    background-color: #f4f4f4;
     padding-top: 80px;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -19,35 +19,32 @@ html {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff !important; /* Bootstrap primary color */
-    background-color: #f8f9fa; /* Light background on hover */
+    color: #007bff !important; 
+    background-color: #f8f9fa; 
 }
 
 
 
 /* Background video styling */
 .background-video {
-    position: fixed; /* Keeps the video in the background */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100vw; 
     height: 100vh; 
     object-fit: cover; 
-    z-index: -1; /* Keep it behind other content */
+    z-index: -1; 
 }
 
 /* Ensure header content is above the video */
 .header {
     position: relative;
-    z-index: 1; /* Set higher z-index */
+    z-index: 1; 
     color: rgb(0, 0, 0); 
     padding: 100px 0; 
     min-height: 100vh; 
 }
 
-.header h1, .header p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
-}
 
 .header .profile img {
     border-radius: 50%;
@@ -57,12 +54,14 @@ html {
     margin-bottom: 20px;
 }
 .social-icons a {
-    font-size: 24px; /* Adjust icon size */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 24px; 
+    transition: transform 0.3s, color 0.3s; 
 }
 
 .social-icons a:hover {
-    color: #666; /* Change color on hover */
+    color: #3350d1; 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
 }
 
 
@@ -115,13 +114,41 @@ ul li {
 
 #connect {
     background: #e0e0e0;
-    padding: 50px 0;
+    padding: 20px 0; /* Further reduced padding */
 }
 
-#connect-title {
-    color: #333;
-    border-color: #666;
+#connect .container {
+    max-width: 500px; /* Limit the width for a more compact look */
 }
+
+.bg-white {
+    padding: 15px; /* Further reduced padding inside the form */
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced margin between form groups */
+}
+
+.form-control {
+    font-size: 0.75em; /* Smaller font size for a more compact appearance */
+}
+
+.btn-primary {
+    font-size: 0.75em; /* Smaller button text */
+    padding: 8px; /* Adjust button padding */
+}
+
+@media (max-width: 768px) {
+    #connect .container {
+        width: 100%;
+        padding: 0 10px; /* Add padding for smaller screens */
+    }
+    
+    .form-control, .btn-primary {
+        font-size: 0.875em; /* Slightly larger text on smaller screens */
+    }
+}
+
 
 .form-control {
     border-radius: 0;
